@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(120deg, rgb(70, 150, 182),rgb(138, 61, 61));
+    min-height: 100vh;
+}
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form i{
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: none;
+    color: rgb(138, 61, 61);
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    background: rgb(151, 73, 45);
+    padding-left: 0.5rem;
+}
+.todoItem{
+    flex: 1;
+}
+.deletedBtn, .completedBtn{
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+}
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+.completed{
+    opacity: 0.7;
+    text-decoration: line-through;
+}
